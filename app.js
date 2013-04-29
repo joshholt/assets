@@ -1,9 +1,9 @@
-var express 	= require('express'),
-  	routes  	= require('./routes'),
-  	http 			= require('http'),
-  	rack 			= require('asset-rack'),
+var express   = require('express'),
+  	routes    = require('./routes'),
+  	http      = require('http'),
+  	rack      = require('asset-rack'),
   	bootstrap = require('bootstrap-stylus'),
-  	path 			= require('path');
+  	path      = require('path');
 
 var assets = new rack.Rack([
   new rack.JadeAsset({
