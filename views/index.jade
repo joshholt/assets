@@ -2,12 +2,18 @@ doctype 5
 html
   head
     title Some Angular Stuff
-    != assets.tag('/style.css')
+    link(rel="stylesheet", type="text/css", href="/style.css")
+    //- ** use the following when you want caching **
+    //- != assets.tag('/style.css') 
   body
     .row
       .span6(ng-app="todolist")
         div(ng-controller="TodosCtrl")
           todos
           todos
-    != assets.tag('/templates.js')
-    != assets.tag('/app.js')
+
+    script(type="text/javascript", src="/templates.js")
+    script(type="text/javascript", src="/app.js")
+    //- ** use the following when you want caching **
+    //- != assets.tag('/templates.js')
+    //- != assets.tag('/app.js')
