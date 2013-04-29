@@ -1,0 +1,13 @@
+doctype 5
+html
+  head
+    title Some Angular Stuff
+    != assets.tag('/style.css')
+  body
+    .row
+      .span6(ng-app="todolist")
+        div(ng-controller="TodosCtrl")
+          todos
+          todos
+    != assets.tag('/templates.js')
+    != assets.tag('/app.js')

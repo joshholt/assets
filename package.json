@@ -1,0 +1,14 @@
+{
+  "name": "angular-apps",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.0",
+    "jade": "*",
+    "asset-rack": "~2.1.5",
+    "bootstrap-stylus": "~0.2.1"
+  }
+}

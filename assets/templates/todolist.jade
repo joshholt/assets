@@ -1,0 +1,15 @@
+h2 Todos
+.well
+	ul.unstyled
+		li(ng-repeat="todo in todos")
+			input(type="checkbox", ng-model="todo.done")
+			span(class="done-{{todo.done}}") &nbsp; {{todo.text}}
+
+	form(ng-submit="addTodo()")
+		input(type="text", ng-model="todoText", size="30", placeholder="add new todo...")&nbsp;
+		input.btn.primary(type="submit", value="add")
+
+	hr
+	span {{remaining()}} of {{todos.length}} remaining [&nbsp;
+		a(href="", ng-click="archive()") archive
+		&nbsp;]
